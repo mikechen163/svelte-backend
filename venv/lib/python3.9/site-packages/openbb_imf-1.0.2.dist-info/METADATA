@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: openbb-imf
+Version: 1.0.2
+Summary: https://datahelp.imf.org/knowledgebase/articles/630877-api
+License: AGPL-3.0-only
+Author: OpenBB Team
+Author-email: hello@openbb.co
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: openbb-core (>=1.3.6,<2.0.0)
+Description-Content-Type: text/markdown
+
+# OpenBB IMF Provider Extension
+
+This package adds the `openbb-imf` provider extension to the OpenBB Platform.
+
+## Installation
+
+Install from PyPI with:
+
+```sh
+pip install openbb-imf
+```
+
+## Implementation
+
+The extension utilizes the JSON RESTful Web Service ((https://datahelp.imf.org/knowledgebase/articles/630877-data-services)[https://datahelp.imf.org/knowledgebase/articles/630877-data-services])
+
+No authorization is required to use, but IP addresses are bound by the limitations described in the link above.
+
+## Coverage
+
+- Databases:
+  - International Reserves and Foreign Currency Liquidity
+  - Direction of Trade Statistics
+
+Coverage:
+  - All IRFCL tables.
+  - Individual, or multiple, time series from single or multiple countries.
+
+### Endpoints
+
+- `obb.economy.available_indicators`
+- `obb.economy.indicators`
+- `obb.economy.direction_of_trade`
+

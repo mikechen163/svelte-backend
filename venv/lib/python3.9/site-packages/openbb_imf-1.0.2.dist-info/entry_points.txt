@@ -1,0 +1,3 @@
+[openbb_provider_extension]
+imf=openbb_imf:imf_provider
+
